@@ -3,9 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 // import { NavBar, Footer, Loading } from "./components";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Profile from "./Profile"
-import NavBar from './components/NavBar.js';
+import NavBar from './components/NavBar';
 import Loader from './Loading'
 
 

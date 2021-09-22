@@ -1,0 +1,13 @@
+.title-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 1rem;
+}
+
+@media (max-width: 769px) {
+  .title-block{
+    width: 100%;
+    align-items: center;
+  }
+}

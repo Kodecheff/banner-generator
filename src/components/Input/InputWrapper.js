@@ -2,10 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import ContentInput from "./ContentInput"
-import Subcontent from "./Subcontent"
-import ColorInput from "./ColorInput"
-import SizeInput from "./SizeInput"
+import TitleInput from "../TitleInput"
+import SubtitleInput from "../SubtitleInput"
+import ColorInput from "../ColorInput"
+import SizeInput from "../SizeInput"
 
 
 const Wrapper = styled.div`
@@ -18,23 +18,6 @@ const Wrapper = styled.div`
   }
 `
 
-const Detail = styled.details`
-  margin-left: 1rem;
-`
-
-const Summary = styled.summary`
-  text-align: left;
-  font-size: 2rem;
-
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-
-  &:focus {
-    outline: transparent;
-  }
-`
 
 const InputWrapper = ({ values, setters }) => {
   const { bgColor, title, titleSize, subtitle, titleColor, subtitleColor, borderColor, borderSize } = values
@@ -43,8 +26,8 @@ const InputWrapper = ({ values, setters }) => {
   return (
     <>
     <Wrapper>
-      <ContentInput title={title} setTitle={setTitle} />
-      <Subcontent subtitle={subtitle} setSubtitle={setSubtitle} />
+      <TitleInput title={title} setTitle={setTitle} />
+      <SubtitleInput subtitle={subtitle} setSubtitle={setSubtitle} />
 
       <SizeInput titleSize={titleSize} borderSize={borderSize} setTitleSize={setTitleSize} setBorderSize={setBorderSize} />
 

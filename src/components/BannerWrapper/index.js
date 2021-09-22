@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from "react"
-// import styled from "styled-components"
 import html2canvas from "html2canvas"
-import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
-import {AdvancedImage} from '@cloudinary/react'
+// import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+// import {AdvancedImage} from '@cloudinary/react'
 import {Cloudinary} from "@cloudinary/url-gen";
 
 
-import InputWrapper from "./InputWrapper"
-import Output from "./Output"
-import Button from "./Buttons/Button"
-import DownloadButton from "./Buttons/DownloadButton"
-import useInputs from "../hooks/useInputs"
+import InputWrapper from "../Input/InputWrapper"
+import Output from "../Output"
+import useInputs from "../../hooks/useInputs"
 
-import './Components.css'
+import './style.css'
 
 
 
@@ -86,16 +83,13 @@ const BannerWrapper = () => {
         </div>
         <div className="actionWrapper">
           <InputWrapper values={values} setters={setters} />
-          {/* <Button onClick={setters.randomizeInputs}>
-            RANDOMISE
-          </Button> */}
 
-          <DownloadButton className="btn btn-success" id="download-button" download="banner.png" href={imgURL}>
+          <button className="btn btn-success" id="download-button" download="banner.png" href={imgURL}>
             DOWNLOAD BANNER
-          </DownloadButton>
-          <DownloadButton onClick={generateLink}>
+          </button>
+          <button className="btn btn-info" style={{color: "white"}} onClick={generateLink}>
             GENERATE LINK
-          </DownloadButton>
+          </button>
         </div>
       </div>
     </>

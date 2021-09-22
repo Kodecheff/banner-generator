@@ -1,7 +1,6 @@
 import React from "react";
 
-import MainNav from "./MainNav";
-import AuthNav from "./AuthNav";
+import AuthNav from "../AuthNav";
 
 const NavBar = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import SignupButton from './Buttons/SignupButton'
+import SignupButton from '../Buttons/SignupButton'
 
 import { useAuth0 } from "@auth0/auth0-react";
 

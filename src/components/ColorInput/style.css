@@ -1,0 +1,12 @@
+.color-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.color-block{
+  margin: 10px 9px;
+}
