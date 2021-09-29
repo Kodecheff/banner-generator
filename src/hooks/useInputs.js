@@ -11,7 +11,7 @@ const useInputs = () => {
   const [bgColor, setBgColor] = useState("#151513")
   const [title, setTitle] = useState("Some random article title ⚓")
   const [subtitle, setSubtitle] = useState("Written by Pascal")
-  const [titleSize, setTitleSize] = useState("4")
+  const [titleSize, setTitleSize] = useState("50")
   const [subtitleSize, setSubtitleSize] = useState("2")
   const [titleColor, setTitleColor] = useState("white")
   const [subtitleColor, setSubtitleColor] = useState("white")

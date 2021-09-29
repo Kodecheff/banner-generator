@@ -3,8 +3,10 @@ import { CompactPicker } from "react-color"
 import './style.css'
 
 
-const ColorInput = ({ bgColor, setBgColor, titleColor, subtitleColor, setTitleColor, setSubtitleColor, borderColor, setBorderColor }) => {
-  const handleBgColorChange = ({ hex }) => {
+const ColorInput = ({ bgColor, setBgColor, titleColor, subtitleColor,
+   setTitleColor, setSubtitleColor, borderColor, setBorderColor 
+  }) => {
+  const changeBgColor = ({ hex }) => {
     setBgColor(hex)
     document.body.style.setProperty('--border-color', hex)
   }
@@ -16,7 +18,7 @@ const ColorInput = ({ bgColor, setBgColor, titleColor, subtitleColor, setTitleCo
         <CompactPicker
           triangle="hide"
           color={bgColor}
-          onChangeComplete={(color) => handleBgColorChange(color)}
+          onChangeComplete={(color) => changeBgColor(color)}
         />
       </div>
 

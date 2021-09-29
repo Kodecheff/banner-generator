@@ -17,3 +17,12 @@ button:hover{
 button:focus {
   outline: transparent;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  color: inherit;
+}

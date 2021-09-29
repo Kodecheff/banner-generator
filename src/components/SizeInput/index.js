@@ -9,8 +9,8 @@ const SizeInput = ({ titleSize, borderSize, setTitleSize, setBorderSize }) => {
   return (
     <>
       <div className="size-block">
-        <div>Title size (in <code>rem</code>)</div>
-        <Input value={titleSize} type="number" min="1" onChange={(e) => setTitleSize(e.target.value)} />
+        <div>Title size (in <code>px</code>)</div>
+        <Input value={titleSize} type="number" min="50" onChange={(e) => setTitleSize(e.target.value)} />
       </div>
 
       <div className="size-block">

@@ -1,4 +1,9 @@
 import Loader from "react-loader-spinner";
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+  margin: auto
+`
 
 function Loading() {
 
